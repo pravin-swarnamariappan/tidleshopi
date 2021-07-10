@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    font-family: 'Rakkas', cursive;
+    font-size: large;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 1px;
+    font-size: 60px;
+}
+.head-1{
+    padding: 10px;
+}
+#categories .container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 30px;
+	text-align: center;
+}
+#categories{
+    max-width: 1000px;
+    padding: 10px; 
+    margin: 0 auto;   
+    overflow: unset;
+}
+#shoes{
+    max-width:100%;
+    height:auto;
+}
+#tech{
+    max-width:100%;
+    height:auto;
+}
+#update{
+    font-size: 14px;
+}
+.foll, #blogs{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+#deals{
+    font-size: 43px;
+}
+#about{
+    background-color: #272424;
+    color: white;
+}
+#last-one{
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+#insta , #fb , #linked , #git , #twit{
+    padding: 5px;
+}
+/* Electronics.html part */
+
+.photoo .photos {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 5px;
+	text-align: center;
+}
+.photoo{
+    max-width: 1000px;
+    margin: 0 auto;   
+    overflow: unset;
+}
+#comm{
+    max-width:100%;
+    height:auto;
+}
+
+/*  */
+@media (max-width: 1000px) {
+	#categories .container {
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+    }    
+}
+@media (max-width: 600px){
+    img#tech, img#shoes{
+        width: 300px;
+        height: auto;
+    }
+}
+@media (max-width: 1000px) {
+	.photoo .photos {
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+    }    
+}
+@media (max-width: 600px){
+    img#comm{
+        width: 300px;
+        height: auto;
+    }
+}
